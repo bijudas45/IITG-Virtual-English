@@ -1,0 +1,88 @@
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="haccordion.css" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="haccordion.js">
+</script>
+
+<style type="text/css">
+
+#hc1 li{
+margin:0 10px 0 0;
+/*Spacing between each LI container*/
+}
+
+#hc1 li .hpanel{
+padding: 5px; /*Padding inside each content*/
+background: aliceblue;
+margin-top:100px;
+
+
+}
+</style>
+
+<script type="text/javascript">
+
+haccordion.setup({
+	accordionid: 'hc1', //main accordion div id
+	paneldimensions: {peekw:'50px', fullw:'200px', h:'360px'},
+	selectedli: [0, true], //[selectedli_index, persiststate_bool]
+	collapsecurrent: false //<- No comma following very last setting!
+})
+
+haccordion.setup({
+	accordionid: 'hc2', //main accordion div id
+	paneldimensions: {peekw:'30px', fullw:'450px', h:'190px'},
+	selectedli: [-1, true], //[selectedli_index, persiststate_bool]
+	collapsecurrent: true //<- No comma following very last setting!
+})
+
+</script>
+</head>
+<body>
+<div style="position:absolute; margin-left:220px;">
+	<div id="hc1" class="haccordion">
+	<ul>
+
+	<li>
+		<div class="hpanel">
+		<img src="muhuri.jpg" style="float:left; padding-right:8px; width:180px; height:250px" /><br>
+		</div>
+	</li>
+
+	<li>
+		<div class="hpanel">
+		<img src="plangsi.jpg" style="float:left; padding-right:8px; width:180px; height:250px" />
+		</div>
+	</li>
+
+	<li>
+		<div class="hpanel">
+		<img src="tama.jpg" style="float:left; padding-right:8px; width:180px; height:250px" />
+		</div>
+	</li>
+
+	<li>
+		<div class="hpanel">
+		<img src="jiliyoni.jpg" style="float:left; padding-right:8px; width:180px; height:250px" />
+		</div>
+	</li>
+
+	<li>
+		<div class="hpanel">
+		<img src="lokgeet.jpg" style="float:left; padding-right:8px; width:180px; height:250px" />
+		</div>
+	</li>
+
+<li>
+			<div class="hpanel">
+			<img src="thurang.jpg" style="float:left; padding-right:8px; width:180px; height:250px" />
+			</div>
+	</li>
+
+	</ul>
+</div>
+</div>
+</body>
+</html>
